@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Up</title>
+
+    <!-- Normalize Css 
+      Used for cross browser consistencey for default or previously made set up. To set up this css, if we are using npm, we can just install normalize css. If We are using the react.js then we need to just import normalize css in our index.js or app.js. As we are working on html and css only, so we have to download it. To download, go to the following web adress,
+      https://necolas.github.io/normalize.css/  
+
+      We Can use the normalize css in two ways. One is to create new file for this particular css. Another one is we should have paste the entire css code in our main css. But we have to keep in mind that, we must have paste the normalize css code first than the other styles. That means, all the styles must be later of the normalize css codes. 
+
+      Now we are going to create a new normalize css file in our case. Here, one more thing we have to keep in our mind that, we have to use the normalize css link above the main css file of our project. 
+    -->
+    <link rel="stylesheet" href="normalize.css" />
+
+    <!-- Main CSS DOC -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Main Headings -->
+    <h1>Hellow World!</h1>
+
+    <!-- Paragraphs -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut debitis cum
+      lorem40 cupiditate, itaque saepe excepturi quam temw architecto incidunt
+      quen
+    </p>
+
+    <h2>Hello World</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut debitis cum
+      cupiditate, itaque saepe excepturi quam temw architecto incidunt quen
+    </p>
+
+    <!-- Headings -->
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+    <!-- Links -->
+    <a href="#">Link Style</a>
+
+    <!-- List Items -->
+    <ul>
+      <li>First Items</li>
+      <li>Second Items</li>
+      <li>Third Items</li>
+      <li>Fourth Items</li>
+      <li>Fifth Items</li>
+    </ul>
+
+    <div class="imageContainer">
+      <!-- As the image is now the child element of the div element it can be styled more specifically and the image styling or width is depend on this div or parent element. -->
+      <img src="/something.jpg" alt="do Something Great" class="image" />
+    </div>
+
+    <br />
+    <!-- Button -->
+    <button type="button" class="btn">regular button</button>
+    <button type="button" class="btn hipster_btn">hipster button</button>
+    <br />
+    <br />
+    <!-- Alert -->
+    <div class="alert alert_danger">Sorry! Your password is incorrect</div>
+    <div class="alert alert_success">
+      Congrat's You have successfully logged in
+    </div>
+    <br />
+
+    <!-- Simple from -->
+    <form class="form">
+      <h4>contact form</h4>
+      <div class="form_row">
+        <label for="name" class="form_label">Name</label>
+        <input type="text" placeholder="John" id="name" class="form_input" />
+      </div>
+
+      <div class="form_row">
+        <label for="number" class="form_label">Number</label>
+        <input type="number" id="number" class="form_input" />
+      </div>
+
+      <div class="form_row">
+        <label for="email" class="form_label">Email</label>
+        <input type="email" id="email" class="form_input" />
+        <small class="form_alert">please provide a valid email</small>
+      </div>
+
+      <div class="form_row">
+        <label for="textarea" class="form_label">Textarea</label>
+        <textarea id="textarea" class="form_textarea">
+Tell us anything you wanna know...</textarea
+        >
+      </div>
+      <!-- Button -->
+      <button class="btn btn_block">submit</button>
+    </form>
+
+    <!-- Loading Sign -->
+    <div class="loading"></div>
+    <br />
+    <br />
+    <!-- Section Title -->
+    <div class="title">
+      <h2>Section Title</h2>
+      <div class="title_underline"></div>
+    </div>
+  </body>
+</html>
